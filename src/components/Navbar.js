@@ -5,9 +5,7 @@ const Navbar = ()=>{
     return(
         <nav>
             <h2>Todo...</h2>
-            <li>
-               list
-            </li>
+            <button className='btn btn-danger'>click</button>
         </nav>
     )
 

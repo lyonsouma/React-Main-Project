@@ -1,0 +1,13 @@
+.todo-form-body{
+    background-color: aqua;
+    width: 400px;
+    height: auto;
+    display: grid;
+    grid-gap:5px;
+    border-radius: 5px;
+}
+
+.btn-submit{
+    width: 100px;
+    align-items: center;
+}

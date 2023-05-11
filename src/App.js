@@ -1,3 +1,4 @@
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 // import logo from './logo.svg';
 // import React, {useState} from 'react';
 import './App.css';
@@ -13,12 +14,10 @@ function App() {
     <div className="App">
        {/* <Todo/> */}
       {/* <Navbar/> */}
-
+{
       <div>
-         <TodoForm
-          //  todo = {todo}
-         />
-      </div>
+         <TodoForm/>
+      </div> }
     </div>
   );
 }
