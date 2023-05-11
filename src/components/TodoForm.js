@@ -7,9 +7,12 @@ import Form from 'react-bootstrap/Form';
 const TodoForm = () =>{
 
     const [task , addtask]= useState(' ');
+    const [todoList, setTodoList] = ([ ]);
 
     const handleSubmit = (event)=>{
       event.preventDefault();
+      
+      setTodoList([...todoList, task])
      console.log({task}
      );
      addtask(" ")
