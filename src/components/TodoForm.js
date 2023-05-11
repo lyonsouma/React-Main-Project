@@ -6,12 +6,21 @@ import Form from 'react-bootstrap/Form';
 
 const TodoForm = () =>{
 
-    const [item , addItem]= useState(' ')
+    const [task , addtask]= useState(' ')
+
+    const handleSubmit = (event)=>{
+      event.preventDefault();
+     console.log({
+      Name: {task}
+     }
+     );
+     addtask(" ")
+    }
 
     return(
-    <Form className='container todo-form-body'>
+    <Form className='container todo-form-body' onSubmit={handleSubmit}>
       <Form.Group className="mb-3">
-        <Form.Control className='mt-3' value={item} onChange={(e)=>{addItem(e.target.value)}} placeholder="Today's Task" />
+        <Form.Control className='mt-3' onChange={(e)=>{addtask(e.target.value)}} placeholder="Today's Task" />
       </Form.Group>
       
       <Button className='btn-submit mb-2' variant="primary" type="submit">
