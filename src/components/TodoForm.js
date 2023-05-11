@@ -6,13 +6,11 @@ import Form from 'react-bootstrap/Form';
 
 const TodoForm = () =>{
 
-    const [task , addtask]= useState(' ')
+    const [task , addtask]= useState(' ');
 
     const handleSubmit = (event)=>{
       event.preventDefault();
-     console.log({
-      Name: {task}
-     }
+     console.log({task}
      );
      addtask(" ")
     }

@@ -1,3 +1,6 @@
+.brand{
+    color: rgb(92, 33, 219);
+}
 .todo-form-body{
     background-color: aqua;
     width: 400px;
@@ -10,4 +13,11 @@
 .btn-submit{
     width: 100px;
     align-items: center;
+}
+
+ /* NavBar */
+.todo-links{
+    display: flex;
+    grid-gap: 40px;
+    width: auto;
 }

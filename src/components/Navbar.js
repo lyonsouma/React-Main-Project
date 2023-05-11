@@ -1,13 +1,24 @@
 import React from 'react'
+import './Todo.css'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-const Navbar = ()=>{
+
+const NavBar = ()=>{
 
     return(
-        <nav>
-            <h2>Todo...</h2>
-            <button className='btn btn-danger'>click</button>
-        </nav>
+        <Navbar bg="light" expand="lg" className='container'>
+      <Container>
+        <Navbar.Brand><h2 className='brand'>TodoApp...</h2></Navbar.Brand>
+          <div className='todo-links'>
+           <button className='btn btn-success'><Nav.Link href="#">Home</Nav.Link></button>
+            <button className='btn btn-success'><Nav.Link href="#">Task List</Nav.Link></button>
+            
+          </div>
+      </Container>
+    </Navbar>
     )
 
 }
-export default Navbar
+export default NavBar
