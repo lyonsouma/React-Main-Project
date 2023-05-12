@@ -1,27 +1,22 @@
-import React, {useState} from "react";
+// import React, {useState} from "react";
 import './Todo.css'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 
-const TodoForm = () =>{
-
-    const [task , addtask]= useState(' ');
-    // const [todoList, setTodoList] = ([ ]);
+const TodoForm = ({Task, AddTask, TodoList,SetTodoList}) =>{
 
     const handleSubmit = (event)=>{
       event.preventDefault();
-      
-      // setTodoList([...todoList, task])
-     console.log({task}
-     );
-     addtask(" ")
+      SetTodoList([...TodoList, Task])
+     console.log({TodoList});
+     AddTask(" ")
     }
 
     return(
     <Form className='container todo-form-body' onSubmit={handleSubmit}>
       <Form.Group className="mb-3">
-        <Form.Control className='mt-3' onChange={(e)=>{addtask(e.target.value)}} placeholder="Today's Task" />
+        <Form.Control className='mt-3'  onChange={(e)=>{AddTask(e.target.value)}} placeholder="Today's Task" />
       </Form.Group>
       
       <Button className='btn-submit mb-2' variant="primary" type="submit">
