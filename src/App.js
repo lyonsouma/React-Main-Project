@@ -4,6 +4,7 @@ import React, {useState} from 'react';
 import './App.css';
 // import NavBar from './components/Navbar';
 import TodoForm from './components/TodoForm';
+import Display from './components/Display';
 
 
 
@@ -25,6 +26,7 @@ function App() {
          TodoList = {todoList}
          SetTodoList = {setTodoList}
          />
+         <Display TodoList = {todoList} />
       </div> }
     </div>
   );
