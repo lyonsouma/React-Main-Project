@@ -3,7 +3,7 @@
 }
 .todo-form-body{
     background-color: rgb(219, 224, 224);
-    width: 400px;
+    width: auto;
     height: auto;
     display: grid;
     grid-gap:5px;
