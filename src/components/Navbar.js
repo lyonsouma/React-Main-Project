@@ -10,7 +10,7 @@ const NavBar = ()=>{
     return(
         <Navbar bg="primary" expand="lg" className='container'>
       <Container>
-        <Navbar.Brand><h2 className='brand pt-3'>TodoApp...</h2></Navbar.Brand>
+        <Navbar.Brand><h2 className='brand'>TodoApp...</h2></Navbar.Brand>
           <div className='todo-links'>
            <button className='btn btn-light'><Nav.Link href="#">Home</Nav.Link></button>
             <button className='btn btn-light'><Nav.Link href="#">Task List</Nav.Link></button>
