@@ -9,11 +9,12 @@ const TodoForm = ({Task, AddTask, TodoList,SetTodoList}) =>{
     const handleSubmit = (event)=>{
       event.preventDefault();
       SetTodoList([...TodoList, Task]);
-     AddTask('')
+      let empty=" ";
+      Task=empty;
     }
 
     return(
-    <Form className='container todo-form-body mt-3' onSubmit={handleSubmit}>
+    <Form className='container todo-form-body' onSubmit={handleSubmit}>
       <Form.Group className="mb-3">
         <Form.Control className='mt-3'  onChange={(e)=>{AddTask(e.target.value)}} placeholder="Today's Task" />
       </Form.Group>

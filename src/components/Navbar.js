@@ -8,12 +8,12 @@ import Navbar from 'react-bootstrap/Navbar';
 const NavBar = ()=>{
 
     return(
-        <Navbar bg="primary" expand="lg" className='container'>
+        <Navbar bg="light" expand="lg" className='container'>
       <Container>
         <Navbar.Brand><h2 className='brand'>TodoApp...</h2></Navbar.Brand>
           <div className='todo-links'>
-           <button className='btn btn-light'><Nav.Link href="#">Home</Nav.Link></button>
-            <button className='btn btn-light'><Nav.Link href="#">Task List</Nav.Link></button>
+           <button className='btn btn-success'><Nav.Link href="#">Home</Nav.Link></button>
+            <button className='btn btn-success'><Nav.Link href="#">Task List</Nav.Link></button>
             
           </div>
       </Container>
