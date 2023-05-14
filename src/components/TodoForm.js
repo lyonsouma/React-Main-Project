@@ -9,8 +9,10 @@ const TodoForm = ({Task, AddTask, TodoList,SetTodoList}) =>{
     const handleSubmit = (event)=>{
       event.preventDefault();
       SetTodoList([...TodoList, Task]);
-      let empty=" ";
-      Task=empty;
+      console.log ({TodoList});
+      AddTask("");
+      // let empty=" ";
+      // Task=empty;
     }
 
     return(
