@@ -16,7 +16,7 @@ const TodoForm = ({Task, AddTask, TodoList,SetTodoList}) =>{
     }
 
     return(
-    <Form className='container todo-form-body' onSubmit={handleSubmit}>
+    <Form className='container todo-form-body mt-3' onSubmit={handleSubmit}>
       <Form.Group className="mb-3">
         <Form.Control className='mt-3'  onChange={(e)=>{AddTask(e.target.value)}} placeholder="Today's Task" />
       </Form.Group>
